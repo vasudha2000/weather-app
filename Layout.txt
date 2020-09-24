@@ -1,0 +1,16 @@
+Panel 1:
+-> Temp
+-> Feels like
+-> Peak and valley
+-> Over days/time
+
+Panel 2:
+-> Precipitation (right)
+-> Visibility
+-> Wind
+-> Humidity
+-> UV Index
+-> Pressure
+
+Panel 3:
+-> Mera sexy sa shakal

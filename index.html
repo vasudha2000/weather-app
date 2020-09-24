@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <link rel="stylesheet" href="index.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-wrapper transparent z-depth-0">
+            <div class="container">
+                <a href="#" class="brand-logo">Weather Info</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                    <i class="material-icons">menu</i>
+                </a>
+                <!-- <ul class="right hide-on-med-and-down">
+                    <li><a href="#photos">Photos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="btn-floating btn-small transparent z-depth-0"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" class="btn-floating btn-small transparent z-depth-0"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" class="btn-floating btn-small transparent z-depth-0"><i class="fab fa-instagram"></i></a></li>
+                </ul> -->
+            </div>
+        </nav>
+        <!-- <ul class="sidenav grey lighten-2" id="mobile-links">
+            <li class="sidenav-close"><a href="#photos">Photos</a></li>
+            <li class="sidenav-close"><a href="#services">Services</a></li>
+            <li class="sidenav-close"><a href="#contact">Contact</a></li>
+        </ul> -->
+    </header>
+
+    <div class="container body-container">
+        <div class="row" style="margin-top: 6rem;">
+            <div class="col s3">
+                <div class="card" style="background-color: rgba(66, 66, 66, 0.4);">
+                    <span class="grey-text text-lighten-4" style="font-size: 4rem;">Mumbai</span>
+                    <br>
+                    <span class="grey-text text-lighten-4" style="font-size: 1.5rem;">10:30 AM, 23 Sep 2020</span>
+                </div>
+            </div>
+            <div class="col s9">
+                <div class="row" style=" width: 100%;display: flex;">
+                    <div class="col s1" style="flex: 1;padding-right: 0.5rem;">
+                        <button id="prev-slide" class="btn-floating btn-small waves-effect waves-light" style="top: 50%"><</button>
+                    </div>
+                    <div class="carousel carousel-slider col s10">
+                        <div class="carousel-item white-text" href="#one!"
+                            style="background-color: rgba(66, 66, 66, 0.4);">
+                            </div>
+                        <div class="carousel-item white-text" href="#two!"
+                            style="background-color: rgba(66, 66, 66, 0.4);">
+                            
+                        </div>
+                        <div class="carousel-item white-text" href="#three!"
+                            style="background-color: rgba(66, 66, 66, 0.4);">
+                            <h2>Third Panel</h2>
+                            <p class="white-text">This is your third panel</p>
+                        </div>
+                    </div>
+                    <div class="col s1" style="flex: 1;">
+                        <button id="next-slide" class="btn-floating btn-small waves-effect waves-light" style="top: 50%">></button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="./index.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true
+            })
+            // $('.materialboxed').materialbox();
+            // $('.parallax').parallax();
+            // $('.tabs').tabs();
+            // $('.datepicker').datepicker();
+            // $('.scrollspy').scrollSpy();
+        });
+    </script>
+
+</body>
+
+</html>
